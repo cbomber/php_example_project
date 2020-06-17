@@ -34,9 +34,7 @@ if(empty($_SESSION['authenticated'])){
                     if(json.success){
                         alert(json.msg);
                         window.location.href = "index.php";
-                    } else {
-                        alert(json.msg);
-                    }
+                    } 
                 });
                 // Define what happens in case of error
                 XHR.addEventListener( "error", function( event ) {
