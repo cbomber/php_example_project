@@ -35,7 +35,7 @@ if(empty($_SESSION['authenticated'])){
                         alert(json.msg);
                         window.location.href = "index.php";
                     } else {
-                        alert("Problem processing quote. Please make sure the form is complete.");
+                        alert(json.msg);
                     }
                 });
                 // Define what happens in case of error
